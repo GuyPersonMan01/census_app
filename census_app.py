@@ -7,7 +7,7 @@ import streamlit as st
 @st.cache_data()
 def load_data():
     # Load the Adult Income dataset into DataFrame.
-    df = pd.read_csv('https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/whitehat-ds-datasets/adult.csv', header=None)
+    df = pd.read_csv('adult.csv', header=None)
 
     # Rename the column names in the DataFrame.
     column_name =['age', 'workclass', 'fnlwgt', 'education', 'education-years', 'marital-status', 'occupation', 'relationship', 'race', 'gender','capital-gain', 'capital-loss', 'hours-per-week', 'native-country', 'income']
